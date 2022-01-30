@@ -21,28 +21,44 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    
+
+    max_turtle = turtle.Turtle()
+
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+
+    max_turtle.shape("turtle")
+
     # Set the turtle width to 2
-    
+
+    max_turtle.width(2)
+
     # Set the turtle speed to 0 (fastest)
-    
+
+    max_turtle.speed(10)
+
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
-        
+
+    for i in range(1):
+
         # Set the turtle .fillcolor() to orange
-        
+
+        max_turtle.fillcolor('orange')
+
         # Call the turtle .begin_fill() function
-        
+
+        max_turtle.begin_fill()
+
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
         #                will turn a full circle)
-        
+        max_turtle.right(45,)
         # DRAW           Move the turtle 64 pixels
-        
+
+        max_turtle.forward(64)
+
         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative
         #                numbers will turn the turtle counter-clockwise.)
-        
+        max_turtle.left(-40)
         # DRAW FLAME     Move the turtle the distance in the variable flameSize
         
         #                Turn the turtle to the right 170 degrees
