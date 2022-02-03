@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     # Make the turtle shape 'turtle', .shape('turtle')
 
-    max_turtle.shape("turtle")
+    max_turtle.shape('turtle')
 
     # Set the turtle width to 2
 
@@ -34,12 +34,13 @@ if __name__ == '__main__':
 
     # Set the turtle speed to 0 (fastest)
 
-    max_turtle.speed(10)
+    max_turtle.speed(0)
 
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
 
-    for i in range(1):
+    for i in range(25):
+
 
         # Set the turtle .fillcolor() to orange
 
@@ -51,28 +52,38 @@ if __name__ == '__main__':
 
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
         #                will turn a full circle)
-        max_turtle.right(45,)
+        max_turtle.right(45)
         # DRAW           Move the turtle 64 pixels
 
         max_turtle.forward(64)
 
         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative
         #                numbers will turn the turtle counter-clockwise.)
-        max_turtle.left(-40)
+        max_turtle.left(40)
         # DRAW FLAME     Move the turtle the distance in the variable flameSize
-        
+
+        max_turtle.forward(flameSize)
+
         #                Turn the turtle to the right 170 degrees
-         
+        max_turtle.right(170)
         #                Move the turtle the distance in the variable flameSize (again)
-         
+
+        max_turtle.forward(flameSize)
+
         #  TURN RIGHT    Turn the turtle 62 degrees to the right
-        
+        max_turtle.right(62)
         #  DRAW          Move the turtle the distance in the variable baseSize
-        
+
+        max_turtle.forward(baseSize)
+
         # Call the turtle .end_fill() method
-        
+
+        max_turtle.end_fill()
+
     # Hide your turtle so you can see the pattern.
-        
+
+        max_turtle.hideturtle()
+
     # TEST   Run the program. Check that your shape is the same as the first
     #        picture in the recipe. This is one arm of the ninja star.
 
